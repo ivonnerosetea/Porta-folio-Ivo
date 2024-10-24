@@ -189,7 +189,7 @@ header.sticky .nav-bar {
     max-width: 350px;
 }
 
-/* Contáctame */
+/* Conóceme */
 .btn {
     background: var(--second-color);
     color: #fff;
@@ -197,7 +197,7 @@ header.sticky .nav-bar {
     font-weight: 500;
     display: inline-block;
     margin-top: 25px;
-    padding: 20px 30px;
+    padding: 10px 30px;
     letter-spacing: 1px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px 0px var(--second-color);
@@ -296,9 +296,10 @@ header.sticky .nav-bar {
 .container {
     position: relative;
     flex-direction: column;
+    margin-top: -85px;
 }
 
-/* ==ABOUT SECTION== */
+/* SOBRE MI */
 .about .container .content {
     column-gap: 40px;
     width: 100%;
@@ -310,14 +311,14 @@ header.sticky .nav-bar {
 }
 
 .about-img img {
-    max-width: 100%;
+    max-width: 70%;
     min-width: 500px;
-    border-radius: 300px;
+    border-radius: 100%;
 }
 
 /* Descripción */
 .about-info .description {
-max-width: 600px;
+max-width: 900px;
 }
 
 .about-info .description h3 {
@@ -359,9 +360,10 @@ max-width: 600px;
     font-size: var(--small-font-size);
 }
 
-/* ==SKILLS SECTION== */
+/* EXPERIENCIA */
 .skills .container .content {
     width: 100%;
+    margin-bottom: -100px;
 }
 .skills-description {
     max-width: 700px;
@@ -473,8 +475,12 @@ max-width: 600px;
     width: 85%;
 }
 
-.bar .javascript:before {
+.bar .sass:before {
     width: 60%;
+}
+
+.bar .javascript:before {
+    width: 70%;
 }
 
 .bar .react:before {
@@ -485,8 +491,13 @@ max-width: 600px;
     width: 70%;
 }
 
+.bar .aws:before {
+    width: 50%;
+}
+
 /* ==Services section== */
 /* ==Portfolio section== */
+
 .portfolio .container .content {
     width: 100%;
 }
@@ -571,10 +582,11 @@ max-width: 600px;
     opacity: 1;
 }
 
+/* Contenido del model  */
 .portfolio-model-body {
     position: relative;
     background: var(--modal-bg-color);
-    max-width: 600px;
+    max-width: 400px;
     margin: 20px;
     padding: 40px;
     border-radius: 10px;
