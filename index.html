@@ -4,90 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rosete</title>
+    <title>Portafolio Rosete</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
 </head>
 <body>
-    <!-- ==HEADER== -->
+    <!-- = Header = -->
     <header class="sticky">
         <div class="nav-bar">
             <a href="#menu" class="logo">ROSETE</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#menu">Menú</a>
-                    <a href="#sobremi">Sobre mí</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#sobre">Sobre mí</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#portfolio">Portafolio</a>
                 </div>
             </div>
         </div>
     </header>
-    <!-- ==HOME SECTION== -->
-    <section class="home flex-center" id="menu">
+
+    <!-- = Bienvenido = -->
+    <section class="home flex-center" id="sobre">
         <div class="home-container">
             <div class="media-icons">
                 <a href=""><i class="fas fa-phone"></i></a>
                 <a href="https://www.linkedin.com/in/ivonnerosetea/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/ivonnerosetea"><i class="fab fa-github"></i></a>
                 <a href="mailto:irosetealcan@gmail.com?subject=Asunto%20del%20Correo&body=Este%20es%20el%20cuerpo%20del%20mensaje"><i class="fas fa-envelope"></i></a>
-         </div>
+            </div>
             <div class="info">
-            <h2>¡Bienvenido!</h2>
-            <h3>Soy Front-End Developer</h3>
-            <p>Aquí te enseñaré mi trabajo, mis habilidades y mi experiencia como desarrolladora de páginas web...</p>
-            <a href="#sobremi" class="btn">Conóceme</a>
-         </div>
-           <div class="menu-img">
-                <img src="img/lap.png" alt="">
+            <h2>¡Hola, soy Ivonne!</h2>
+            <h3>Ingeniera en Sistemas Computacionales</h3>
+            <p>Actualmente me dedico al Desarrollo Front-End, soy apasionada por construir páginas web modernas y dinámicas. Encantada de aprender tecnologías nuevas y sobre todo con muchas ganas de aplicar mi conocimiento para lograr los objetivos de la organización. A continuación te enseñaré mi trabajo, mis habilidades y mi experiencia en el área.</p>
+            <ul class="profesional-list">
+              <li class="list-item">
+                  <h3>2+</h3>
+                  <span>Años de<br>experiencia</span>
+              </li>
+              <li class="list-item">
+                  <h3>6+</h3>
+                  <span>Proyectos<br>personales<br>realizados</span>
+              </li>
+          </ul>
+            <a href="IvonneCV.pdf" download="IvonneCV.pdf" class="btn">Descargar CV <i class="fas fa-download"></i></a>
+          </div>
+           <div class="about-img">
+                <img src="img/sobremi.jpeg" alt="">
            </div>
         </div>
-        <a href="#sobremi" class="scroll-down">Scroll <i class="fas fa-arrow-down"></i></a>
+        <a href="#experiencia" class="scroll-down"><i class="fas fa-arrow-down"></i></a>
     </section>
-    
-    <!-- ==ABOUT SECTION== -->
-    <section class="about section" id="sobremi">
-        <div class="container flex-center">
-            <h1 class="section-title-01">Sobre mí</h1>
-            <h2 class="section-title-02">Sobre mí</h2>
-            <div class="content flex-center">
-                <div class="about-img">
-                <img src="perfile.jpeg" alt="">
-        </div>
-        <div class="about-info">
-          <div class="description">
-            <h3>Soy Ivonne Rosete</h3>
-            <h4>Recidencia <span>Ciudad de México</span></h4>
-            <p>Actualmente me dedico al Desarrollo Front-End , soy apasionada por construir páginas web
-              modernas y dinámicas. Encantada de aprender tecnologías nuevas y sobre todo con muchas
-              ganas de aplicar mi conocimiento para lograr los objetivos de la organización.</p>
-        </div>
-        <ul class="profesional-list">
-            <li class="list-item">
-                <h3>1+</h3>
-                <span>Años de<br>experiencia</span>
-            </li>
-            <li class="list-item">
-                <h3>3+</h3>
-                <span>Proyectos<br>personales<br>realizados</span>
-            </li>
-        </ul>
-        <a href="IvonneCV.pdf" download="IvonneCV.pdf" class="btn">Descargar CV <i class="fas fa-download"></i></a>
-      </div>
-    </div>
-   </div>
-  </section>
 
-  <!-- EXPERIENCIA -->
-<section class="skills section" id="habilidades">
-    <div class="container flex-center">
+
+    <!-- = Experiencia = -->
+    <section class="skills section" id="experiencia">
+     <div class="container flex-center">
         <h1 class="section-title-01">Experiencia</h1>
         <h2 class="section-title-02">Experiencia</h2>
-        <div class="content">
-        <div class="skills-description">
-
+        <!-- <div class="content">
+        <div class="skills-description"> -->
     </div>
     <!-- Educación -->
     <div class="skills-info education-all">
@@ -99,21 +75,16 @@
                 <p>Título y cédula profesional</p>
                 <p><span>Ingeniería en Sistemas Computacionales</span> Universidad UCAD, Ciudad de México.</p>
               </li>
-              <!-- <li class="item">
-                <span class="year">2021-2022</span>
-                <p>En curso</p>
-                <p><span>Idioma Ingles</span> Oxford, Ciudad de México.</p>
-              </li> -->
               <li class="item">
-                <span class="year">2024 - 2027</span>
-                <p>En curso</p>
-                <p><span>Licenciatura ejecutiva en Diseño Gráfico</span> Universidad Tres Culturas, Ciudad de México.</p>
+                <span class="year">2025 - 2025</span>
+                <p>En curso - Remoto</p>
+                <p><span>Especialización Back-End</span><br> Oracle Next Education - Alura</p>
               </li>
                 <li class="item">
-                <span class="year">2024 - 2025</span>
+                <span class="year">2024 - 2026</span>
                 <p>En curso</p>
                 <p><span>Curso del Idioma Inglés</span><br>Academia Europea, Ciudad de México.</p>
-              </li> 
+              </li>
             </ul>
         </div>
         
@@ -123,53 +94,74 @@
             <lu class="bars">
               <li class="bar">
                   <div class="info">
-                    <span>HTML</span>
-                    <span>95%</span>
+                    <span>HTML5</span>
+                    <!-- <span>100%</span> -->
                   </div>
                 <div class="line html"></div>
               </li>
               <li class="bar">
                   <div class="info">
-                    <span>CSS</span>
-                    <span>85%</span>
+                    <span>CSS3</span>
+                    <!-- <span>100%</span> -->
                   </div>
                 <div class="line css"></div>
               </li>
               <li class="bar">
                 <div class="info">
                   <span>SASS</span>
-                  <span>60%</span>
+                  <!-- <span>100%</span> -->
                 </div>
               <div class="line sass"></div>
             </li>
               <li class="bar">
                   <div class="info">
                     <span>JavaScript</span>
-                    <span>70%</span>
+                    <!-- <span>100%</span> -->
                   </div>
                 <div class="line javascript"></div>
               </li>
               <li class="bar">
+                <div class="info">
+                  <span>TypeScript</span>
+                  <!-- <span>100%</span> -->
+                </div>
+              <div class="line aws"></div>
+            </li>
+              <li class="bar">
                   <div class="info">
                     <span>React</span>
-                    <span>55%</span>
+                    <!-- <span>100%</span> -->
                   </div>
                 <div class="line react"></div>
               </li>
               <li class="bar">
                   <div class="info">
                     <span>Git y GitHub</span>
-                    <span>70%</span>
+                    <!-- <span>100%</span> -->
                   </div>
-                <div class="line sql"></div>
+                <div class="line git"></div>
               </li>
               <li class="bar">
                 <div class="info">
-                  <span>AWS</span>
-                  <span>50%</span>
+                  <span>Figma</span>
+                  <!-- <span>100%</span> -->
                 </div>
               <div class="line aws"></div>
             </li>
+            <li class="bar">
+              <div class="info">
+                <span>Jira</span>
+                <!-- <span>100%</span> -->
+              </div>
+            <div class="line jira"></div>
+          </li>
+          <li class="bar">
+            <div class="info">
+              <span>Firebase</span>
+              <!-- <span>100%</span> -->
+            </div>
+          <div class="line jira"></div>
+        </li>
            </lu>
         </div>
 
@@ -211,9 +203,7 @@
   </div>
 </section>
 
-  <!-- ==Services section== -->
-
-<!-- ==Portfolio section== -->
+<!-- = Portafolio = -->
   <section class="portfolio section" id="portfolio">
     <div class="container flex-center">
       <h1 class="section-title-01">Portafolio</h1>
@@ -224,65 +214,83 @@
         <div class="img-card">
         <div class="overlay"></div>
         <div class="info">
-          <h3>ROSETE</h3>
+          <h3>Blog Ricardo Salinas</h3>
           <span>Moda a tu estilo</span>
         </div>
-          <img src="img/moda.jpeg" alt="">
+          <img src="img/richy.jpeg" alt="">
         </div>
         <div class="porfolio-model flex-center">
         <div class="portfolio-model-body">
           <i class="fas fa-times portfolio-close-btn"></i>
           <h3>Moda a tu estilo</h3>
-          <img src="img/moda.jpeg" alt="">
-          <p>Moda a tu estilo, es una página diseñada para poner a prueba mis habilidades en una tienda Online. Te invito a darle un vistazo, clona el repositorio.</p>
-          <button>Click</button>
+          <img src="img/blog.jpeg" alt="">
+          <p></p>
+          <div class="botones-modal">
+            <div class="tooltip-container">
+              <button class="btn-visitar"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+              <span class="tooltip-text">Visitar página web</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   <div class="img-card-container">
       <div class="img-card">
         <div class="overlay"></div>
           <div class="info">
-            <h3>Veterinaria DT</h3>
-            <span>La salud de tu familia es primero</span>
+            <h3>Chat2Desk</h3>
+            <span></span>
           </div>
-            <img src="img/cats.jpeg" alt="">
+            <img src="img/c2d.jpeg" alt="">
           </div>
           <div class="porfolio-model flex-center">
           <div class="portfolio-model-body">
             <i class="fas fa-times portfolio-close-btn"></i>
             <h3>Veterinaria DT</h3>
-            <img src="img/cats.jpeg" alt="">
-            <p>Si cuidas a tu mascota, cuidas a tu familia. Esta página fue diseñada para dar servicio desde casa por cualquier urgencia que se presente.</p>
+            <img src="img/c2d2.jpeg" alt="">
+            <p>Colaboración en desarrollo de Landing Page, desarrollo con React y tecnologías web; redacción de documentación para funcionalidades nuevas del sistema interno de la organización; configuración de Chatbots para clientes finales y soporte técnico.</p>
+            <div class="botones-modal">
+              <div class="tooltip-container">
+                <button class="btn-visitar"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+                <span class="tooltip-text">Visitar página web</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
   <div class="img-card-container">
       <div class="img-card">
         <div class="overlay"></div>
           <div class="info">
-            <h3>NIKE</h3>
-            <span>Tu calzado dice mucho de ti</span>
+            <h3>ROSETE</h3>
+            <span>Moda a tu estilo</span>
           </div>
-            <img src="img/nike.jpeg" alt="">
+            <img src="img/moda.jpeg" alt="">
           </div>
           <div class="porfolio-model flex-center">
           <div class="portfolio-model-body">
             <i class="fas fa-times portfolio-close-btn"></i>
-            <h3>NIKE</h3>
-            <img src="img/billie.jpeg" alt="">
-            <p>Página web de entretenimiento para toda la familia.</p>
+            <h3>Moda a tu estilo</h3>
+            <img src="img/rosetemx.jpeg" alt="">
+            <p>Esta página ha sido desarrollada con el propósito de demostrar mis conocimientos en las tecnologías HTML, CSS y JavaScript, incorporando diseños originales creados por mí misma, con el objetivo de destacar mis habilidades creativas.</p>
+            <div class="botones-modal">              
+              <div class="tooltip-container">
+              <button class="btn-visitar"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+              <span class="tooltip-text">Visitar página web</span>
+              </div>              
+              <div class="tooltip-container">
+              <button class="btn-github"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fab fa-github"></i></a></button>
+              <span class="tooltip-text">Visitar GitHub</span>
+              </div>            
+            </div>
           </div>
         </div>
       </div>
-
   <div class="img-card-container">
       <div class="img-card">
         <div class="overlay"></div>
           <div class="info">
-            <h3>Anon</h3>
+            <h3>Pag react</h3>
             <span>Compra y Venta</span>
           </div>
             <img src="img/Anon.jpeg" alt="">
@@ -293,44 +301,72 @@
             <h3>Anon</h3>
             <img src="img/Anon.jpeg" alt="">
             <p>Soy fan de los carros, así que decidí poner a prueba mis habilidades con esta página.</p>
+            <div class="botones-modal">              
+              <div class="tooltip-container">
+              <button class="btn-visitar"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+              <span class="tooltip-text">Visitar página web</span>
+              </div>              
+              <div class="tooltip-container">
+              <button class="btn-github"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fab fa-github"></i></a></button>
+              <span class="tooltip-text">Visitar GitHub</span>
+              </div>            
+            </div>
           </div>
         </div>
       </div>
-
   <div class="img-card-container">
       <div class="img-card">
         <div class="overlay"></div>
           <div class="info">
-            <h3>DXT Clínica Odontológica</h3>
-            <span>La mejor opción para tu salud bucal</span>
+            <h3>DOGYCAT</h3>
+            <span>La salud de tus peludos son primero</span>
           </div>
-            <img src="img/bucal.jpeg" alt="">
+            <img src="img/cats.jpeg" alt="">
           </div>
           <div class="porfolio-model flex-center">
           <div class="portfolio-model-body">
             <i class="fas fa-times portfolio-close-btn"></i>
-            <h3>DXT Clínica Odontológica</h3>
+            <h3>DOGYCAT</h3>
             <img src="img/bucal.jpeg" alt="">
             <p>Esta página la diseñe especialmente para un familiar.</p>
+            <div class="botones-modal">              
+              <div class="tooltip-container">
+              <button class="btn-visitar"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+              <span class="tooltip-text">Visitar página web</span>
+              </div>              
+              <div class="tooltip-container">
+              <button class="btn-github"><a href="https://github.com/ivonnerosetea"><i style="color: aliceblue;" class="fab fa-github"></i></a></button>
+              <span class="tooltip-text">Visitar GitHub</span>
+              </div>            
+            </div>
           </div>
         </div>
       </div>
-
   <div class="img-card-container">
       <div class="img-card">
         <div class="overlay"></div>
           <div class="info">
-            <h3>Inmobiliaria CDMX</h3>
-            <span>Tu comodidad esta en nuestras manos</span>
+            <h3>Tour Billie Eilish</h3>
+            <!-- <span>Tu comodidad esta en nuestras manos</span> -->
           </div>
-            <img src="img/inm.jpeg" alt="">
+            <img src="img/billie.jpeg" alt="">
           </div>
           <div class="porfolio-model flex-center">
           <div class="portfolio-model-body">
             <i class="fas fa-times portfolio-close-btn"></i>
-            <h3>Inmobiliaria CDMX</h3>
-            <img src="img/inm.jpeg" alt="">
-            <p>Tu comodidad esta en nuestras manos, conócenos.</p>
+            <h3>Tour Billie Eilish</h3>
+            <img src="img/tour.jpeg" alt="">
+            <p>Desarrollo de un proyecto práctico con el objetivo de evidenciar mis habilidades y experiencia en la implementación y optimización de hojas de estilo utilizando SASS, con énfasis en la modularidad, la reutilización de código.</p>
+            <div class="botones-modal">              
+              <div class="tooltip-container">
+              <button class="btn-visitar"><a href="https://billie-eilish-tour.web.app/"><i style="color: aliceblue;" class="fas fa-arrow-right"></i></a></button>
+              <span class="tooltip-text">Visitar página web</span>
+              </div>              
+              <div class="tooltip-container">
+              <button class="btn-github"><a href="https://github.com/ivonnerosetea/Bil-Eilish"><i style="color: aliceblue;" class="fab fa-github"></i></a></button>
+              <span class="tooltip-text">Visitar GitHub</span>
+              </div>            
+            </div>
           </div>
          </div>
         </div>
@@ -338,45 +374,14 @@
       </div>
      </div>
   </section>
- 
 
   <!-- ==Footer== -->
   <footer>
-    <div class="footer-container">
-      <div class="about group">
-        <h2>ROSETE</h2>
-        <p>Front-end Developer</p>
-        <a href="#sobremi">Sobre mí</a>
-      </div>
-      <div class="hr"></div>
-      <div class="info group">
-        <h3>Más</h3>
-        <ul>
-          <li><a href="#menu">Menú</a></li>
-          <li><a href="#sobremi">Servicios</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="hr"></div>
-      <div class="follow group">
-      <h3>Sígueme</h3>
-      <ul> 
-        <li><a href="https://www.facebook.com/ivonnesquehit.rosete"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://www.instagram.com/ivonnerosetea/?r=nametag"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-github"></i></a></li>      
-      </ul>
-    </div>
-    </div>
-    <div class="footer-copyright group">
-      <p>Copyright © 2022 Rosete. Todos los derechos reservados.</p>
-    </div>
+    <a href="#sobre" class="scroll-down"><i class="fas fa-arrow-up"></i></a>
   </footer>
 
   <!-- ==External scripts== -->
   <script src="js/main.js"></script>
-
   </body>
 </html>
 

@@ -1,12 +1,10 @@
-// Navigation bar effects on scroll
+// = Efecto barra de navegación = 
 window.addEventListener("scroll", function(){
     const header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// Services section - Modal 
-
-// Portafolio section - Modal 
+// = Modal de portafolio =
 const portfolioModals = document.querySelectorAll(".porfolio-model");
 const imgCards = document.querySelectorAll(".img-card");
 const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
@@ -28,18 +26,3 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
         });
     });
 });
-
-// Our clients - Swiper
-
-// Website dark/ligth theme
-
-// Scroll to top buttom
-
-// Navigation menu items active on page scroll
-
-// Responsive navigation menu toggle
-
-// Scroll reveal animations
-// Common reveal options to create reveal animations
-
-// Target ElementInternals, and specify options to create reveal animations
