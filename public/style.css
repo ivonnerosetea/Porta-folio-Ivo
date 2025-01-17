@@ -2,15 +2,10 @@
 
 /* Paleta de colores */
 :root {
-    /* Main theme colors */
     --first-color: #000;
     --second-color: #6163b6;
     --third-color: #777; 
-
-    /* Hover colors */
     --hover-color: #614fd0;
-
-    /* Background Colors */
     --body-bg-color: #fefefe;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
@@ -18,20 +13,12 @@
     --transparent-color-01: rgb(0,0,0,0.1);
     --transparent-color-02: rgb(106,89,209.01);
     --line-color: #d7d7d7;
-    --boton-visit: #2c2c2c;
-    --tools-modal: #4f4f4f;
-
-    /* Color Filter */
+    --boton-visit: #333232e3;
+    --tools-modal: #585858;
     --color-filter: invert(1);
-
-    /* Box Shadow */
     --box-shadow: 3px 3px 20px rgb(0 0 0 / 10%)
-
-    /* Font Size */
     --small-font-size: 0.9em;
     --normal-font-size: 1rem;
-
-    /* Scroll bar colors */
     --scroll-bar-color: #c5cadf;
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
@@ -64,7 +51,7 @@ li {
     list-style: none;
 }
 
-/* = SCROLL BAR = */
+/* = Scroll bar = */
 ::-webkit-scrollbar {
     width: 10px;
     background: var(--scroll-bar-color);
@@ -306,21 +293,7 @@ header.sticky .nav-bar {
     margin-top: -85px;
 }
 
-/* EXPERIENCIA */
-/* .skills .container .content {
-    width: 100%;
-    margin-bottom: 100px;
-} */
-/* .skills-description {
-    max-width: 700px;
-    margin-bottom: 5px;
-}
-
-.skills-description h3 {
-    font-size: 2em;
-    margin-bottom: 5px
-} */
-
+/* Experiencia laboral */
 .skills-info {
     max-width: 100%;
     display: grid;
@@ -732,7 +705,7 @@ header.sticky .nav-bar {
 } */
 
 
-/* = Footer = */
+/* = Scroll footer = */
 footer .scroll-down {
     color: var(--first-color);
     font-size: var(--normal-font-size);
@@ -758,7 +731,7 @@ footer .scroll-down i {
     }
 }
 
-/* ==Media query max-width 1070px== */
+/* = Media query max-width 1070px = */
  @media screen and (max-width: 1070px){
 
 } 
