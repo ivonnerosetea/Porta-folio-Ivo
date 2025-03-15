@@ -647,6 +647,17 @@ header.sticky .nav-bar {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .portfolio {
+     display: block !important;
+         width: 90% !important;
+         max-width: 400px !important;
+         margin: 0 auto !important;
+         padding: 20px !important;
+         text-align: left !important;
+    }
+}
+
 /* Contenido del modal  */
 .portfolio-model-body {
     position: relative;
