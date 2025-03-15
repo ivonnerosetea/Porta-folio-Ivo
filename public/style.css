@@ -276,8 +276,6 @@ header.sticky .nav-bar {
     }
 }
 
-
-/* 🟠 Tablets (máximo 1024px) */
 @media (max-width: 1024px) {
     .home .home-container {
         flex-direction: column;
@@ -286,7 +284,7 @@ header.sticky .nav-bar {
     }
 
     .home-container .about-img {
-        order: -1; /* Mueve la imagen al inicio */
+        order: -1; 
     }
 
     .home-container .info {
@@ -295,25 +293,23 @@ header.sticky .nav-bar {
     }
 
     .home-container .about-img img {
-        width: 350px !important;  /* Tamaño fijo más pequeño */
-        height: auto !important;  /* Mantiene la proporción */
-        max-width: 100% !important;  /* Evita que sea más grande que su contenedor */
-        min-width: unset !important;  /* Elimina el min-width que la hacía grande */
-        object-fit: cover !important; /* Mantiene la calidad */
+        width: 350px !important;  
+        height: auto !important; 
+        max-width: 100% !important;  
+        min-width: unset !important;  
+        object-fit: cover !important; 
         display: block;
 
     }
 
-    /* Años de experiencia en una sola fila */
     .home-container .profesional-list {
         flex-direction: row !important;
         justify-content: center;
         gap: 30px;
     }
 
-    /* Redes sociales antes del botón del CV */
     .home-container .media-icons {
-        order: 1; /* Mueve las redes sociales antes del botón */
+        order: 1;
         flex-direction: row !important;
         justify-content: center;
         gap: 15px;
@@ -322,7 +318,6 @@ header.sticky .nav-bar {
     }
 }
 
-/* 🔵 Móviles (máximo 768px) */
 @media (max-width: 768px) {
     .home .home-container {
         flex-direction: column;
@@ -331,36 +326,35 @@ header.sticky .nav-bar {
         gap: 20px;
     }
 
-    /* Mover la foto al inicio */
     .home-container .about-img {
         order: -1;
     }
 
     .home-container .about-img img {
-        width: 280px !important;  /* Tamaño fijo más pequeño */
-        height: auto !important;  /* Mantiene la proporción */
-        max-width: 100% !important;  /* Evita que sea más grande que su contenedor */
-        min-width: unset !important;  /* Elimina el min-width que la hacía grande */
-        object-fit: cover !important; /* Mantiene la calidad */
+        width: 280px !important; 
+        height: auto !important; 
+        max-width: 100% !important;  
+        min-width: unset !important;  
+        object-fit: cover !important; 
         display: block;
         margin-top: 50px;
     }
 
     .home-container .info {
-        max-width: 100% !important; /* Evita que el texto sea demasiado ancho */
+        max-width: 100% !important; 
         text-align: center !important;
         margin: 0 auto !important;
     }
 
     .home-container .info p {
-        max-width: 100% !important; /* Reduce el ancho de los párrafos para mejor legibilidad */
+        max-width: 100% !important; 
         text-align: center !important;
         margin: 0 auto !important;
-        line-height: 1.5; /* Mejora la separación entre líneas */
+        line-height: 1.5; 
     }
 
     .home-container .info h2 {
-        font-size: 2.3rem !important; /* Ajuste para que no se vea demasiado grande */
+        font-size: 2.3rem !important; 
         text-align: center !important;
     }
 
@@ -375,16 +369,14 @@ header.sticky .nav-bar {
         color: #000000 !important;
     }
 
-    /* Años de experiencia en una sola fila */
     .home-container .profesional-list {
         flex-direction: row !important;
         justify-content: center;
         gap: 15px;
     }
 
-    /* Redes sociales antes del botón del CV y en horizontal */
     .home-container .media-icons {
-        order: 1; /* Mueve las redes sociales antes del botón */
+        order: 1; 
         flex-direction: row !important;
         justify-content: center;
         gap: 15px;
@@ -392,7 +384,6 @@ header.sticky .nav-bar {
         margin: 0 auto !important;
     }
 
-    /* Ajuste del botón */
     .btn {
         font-size: 1em;
         padding: 8px 20px;
@@ -552,16 +543,14 @@ header.sticky .nav-bar {
     width: 100%;
 }
 
-
-/* 🔵 Estilos Responsivos para Móviles (máximo 768px) */
 @media (max-width: 768px) {
    .skills {
     display: block !important;
-        width: 90% !important; /* Asegura que no sean demasiado anchas */
+        width: 90% !important;
         max-width: 400px !important;
-        margin: 0 auto !important; /* Centra cada caja */
+        margin: 0 auto !important;
         padding: 20px !important;
-        text-align: left !important; /* Mantiene el contenido alineado a la izquierda */
+        text-align: left !important;
    }
 
    .flex-center {
@@ -658,17 +647,6 @@ header.sticky .nav-bar {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .portfolio {
-     display: block !important;
-         width: 90% !important; /* Asegura que no sean demasiado anchas */
-         max-width: 400px !important;
-         margin: 0 auto !important; /* Centra cada caja */
-         padding: 20px !important;
-         text-align: left !important; /* Mantiene el contenido alineado a la izquierda */
-    }
-}
-
 /* Contenido del modal  */
 .portfolio-model-body {
     position: relative;
@@ -757,140 +735,6 @@ header.sticky .nav-bar {
     cursor: pointer;
     font-size: 16px;
   }
-  
-
-/* = Get-in-touch = */
-/* .get-in-touch {
-    margin-top: 70px;
-}
-
-.get-in-touch .container .content {
-    width: 100%;
-}
-
-.get-in-touch .contact-card {
-    position: relative;
-    width: 90%;
-    background: var(--card-bg-color);
-    box-shadow: 3px 3px 20px 2px rgba(185, 181, 181, 0.335);
-    padding: 50px;
-    border-radius: 10px;
-    column-gap: 50px;
-}
-
-.contact-card .title {
-    text-transform: uppercase;
-    line-height: 60px;
-}
-
-.contact-card .title h4 {
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 25px;
-}
-
-.contact-card .title h3 {
-    font-size: 2.3em;
-    font-weight: 400;
-}
-
-.contact-card .title h2 {
-    font-size: 4.2em;
-    font-weight: 700;
-    background: linear-gradient(to top, transparent 0%, var(--first-color) 35%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: .9;
-} */
-
-/* = Contáctame = */
-/* .contact .container .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contact-left h2 {
-    font-size: 1.5em;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-.contact-list li {
-    margin-bottom: 40px;
-}
-
-.contact-list li h3 {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.contact-list li h3 i {
-    color: var(--second-color); 
-    font-size: 1.3em;
-    margin-right: 10px;
-}
-
-.contact-list li span {
-    color: var(--third-color);
-    margin-left: 40px;
-}
-
-.contact-list li span a {
-    color: var(--third-color); 
-}
-
-.contact-right p {
-    color: var(--third-color); 
-    font-size: 1.6em;
-    margin-bottom: 30px;
-}
-
-.contact-right p span {
-    color: var(--first-color); 
-    font-weight: 700;
-}
-
-.contact-form input, .contact-form textarea {
-    border: none;
-    color: var(--first-color); 
-    background: #dedddd72;
-    font-size: var(--normal-font-size);
-    margin-bottom: 20px;
-    padding: 15px 40px 40px 20px;
-    border-radius: 5px; 
-}
-
-.contact-form textarea {
-    width: 100%;
-    resize: none;
-}
-
-::placeholder {
-    color: var(--first-color);
-}
-
-.contact-form .first-row input {
-    width: 100%;
-}
-
-.contact-form .second-row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-form .second-row input {
-    width: 48%;
-}
-
-.contact-form .btn {
-    border: none;
-    margin-top: 0;
-    border-radius: 5px;
-    cursor: pointer;
-} */
-
 
 /* = Scroll footer = */
 footer .scroll-down {
@@ -919,6 +763,6 @@ footer .scroll-down i {
 }
 
 /* = Media query max-width 1070px = */
- @media screen and (max-width: 1070px){
+ /* @media screen and (max-width: 1070px){
 
-} 
+}  */
