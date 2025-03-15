@@ -120,6 +120,7 @@ header.sticky .nav-bar {
     color: var(--second-color);
 }
 
+
 @media (max-width: 768px) {
 
     .nav-bar {
@@ -570,12 +571,7 @@ header.sticky .nav-bar {
    .flex-center h1 {
     font-size: 65px;
    }
-
 }
-
-
-
-
 
 /* = Portfolio = */
 .portfolio .container .content {
@@ -660,6 +656,17 @@ header.sticky .nav-bar {
 .porfolio-model.active {
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+     display: block !important;
+         width: 90% !important; /* Asegura que no sean demasiado anchas */
+         max-width: 400px !important;
+         margin: 0 auto !important; /* Centra cada caja */
+         padding: 20px !important;
+         text-align: left !important; /* Mantiene el contenido alineado a la izquierda */
+    }
 }
 
 /* Contenido del modal  */
