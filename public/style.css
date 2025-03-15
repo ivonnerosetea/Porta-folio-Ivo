@@ -398,7 +398,6 @@ header.sticky .nav-bar {
     }
 }
 
-
 /* Letras se sección */
 .flex-center {
     display: flex;
@@ -472,6 +471,10 @@ header.sticky .nav-bar {
 }
 
 /* Educación */
+.hobbies {
+    margin-top: 20px;
+}
+
 .blandas {
     margin-top: 20px;
 }
@@ -547,6 +550,32 @@ header.sticky .nav-bar {
 .bar .aws:before {
     width: 100%;
 }
+
+
+/* 🔵 Estilos Responsivos para Móviles (máximo 768px) */
+@media (max-width: 768px) {
+   .skills {
+    display: block !important;
+        width: 90% !important; /* Asegura que no sean demasiado anchas */
+        max-width: 400px !important;
+        margin: 0 auto !important; /* Centra cada caja */
+        padding: 20px !important;
+        text-align: left !important; /* Mantiene el contenido alineado a la izquierda */
+   }
+
+   .flex-center {
+    margin-top: 100px;
+   }
+
+   .flex-center h1 {
+    font-size: 65px;
+   }
+
+}
+
+
+
+
 
 /* = Portfolio = */
 .portfolio .container .content {
