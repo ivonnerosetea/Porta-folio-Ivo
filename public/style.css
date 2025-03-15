@@ -120,6 +120,33 @@ header.sticky .nav-bar {
     color: var(--second-color);
 }
 
+@media (max-width: 768px) {
+
+    .nav-bar {
+        flex-direction: column !important; 
+        align-items: center !important;
+        text-align: center !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    .nav-items {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        margin-top: 10px !important;
+    }
+
+    .nav-items a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .nav-bar .logo {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+}
+
 /* Bienvenido */
 .home {
     position: relative;
@@ -248,13 +275,137 @@ header.sticky .nav-bar {
     }
 }
 
- .flex-center {
+
+/* 🟠 Tablets (máximo 1024px) */
+@media (max-width: 1024px) {
+    .home .home-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-container .about-img {
+        order: -1; /* Mueve la imagen al inicio */
+    }
+
+    .home-container .info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-container .about-img img {
+        width: 350px !important;  /* Tamaño fijo más pequeño */
+        height: auto !important;  /* Mantiene la proporción */
+        max-width: 100% !important;  /* Evita que sea más grande que su contenedor */
+        min-width: unset !important;  /* Elimina el min-width que la hacía grande */
+        object-fit: cover !important; /* Mantiene la calidad */
+        display: block;
+
+    }
+
+    /* Años de experiencia en una sola fila */
+    .home-container .profesional-list {
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* Redes sociales antes del botón del CV */
+    .home-container .media-icons {
+        order: 1; /* Mueve las redes sociales antes del botón */
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        margin: 0 auto !important;
+    }
+}
+
+/* 🔵 Móviles (máximo 768px) */
+@media (max-width: 768px) {
+    .home .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Mover la foto al inicio */
+    .home-container .about-img {
+        order: -1;
+    }
+
+    .home-container .about-img img {
+        width: 280px !important;  /* Tamaño fijo más pequeño */
+        height: auto !important;  /* Mantiene la proporción */
+        max-width: 100% !important;  /* Evita que sea más grande que su contenedor */
+        min-width: unset !important;  /* Elimina el min-width que la hacía grande */
+        object-fit: cover !important; /* Mantiene la calidad */
+        display: block;
+        margin-top: 50px;
+    }
+
+    .home-container .info {
+        max-width: 100% !important; /* Evita que el texto sea demasiado ancho */
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .home-container .info p {
+        max-width: 100% !important; /* Reduce el ancho de los párrafos para mejor legibilidad */
+        text-align: center !important;
+        margin: 0 auto !important;
+        line-height: 1.5; /* Mejora la separación entre líneas */
+    }
+
+    .home-container .info h2 {
+        font-size: 2.5rem !important; /* Ajuste para que no se vea demasiado grande */
+        text-align: center !important;
+    }
+
+    .home-container .info h3 {
+        font-size: 1.1rem;
+        text-align: center;
+        color: #515151f0 !important;
+    }
+
+    .home-container .profesional-list .list-item h3 {
+        font-size: 2.3rem;
+        color: #000000 !important;
+    }
+
+    /* Años de experiencia en una sola fila */
+    .home-container .profesional-list {
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Redes sociales antes del botón del CV y en horizontal */
+    .home-container .media-icons {
+        order: 1; /* Mueve las redes sociales antes del botón */
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        margin: 0 auto !important;
+    }
+
+    /* Ajuste del botón */
+    .btn {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+}
+
+
+/* Letras se sección */
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 } 
 
-/* Letras se sección */
 .section {
     position: relative;
     width: 1150px;
