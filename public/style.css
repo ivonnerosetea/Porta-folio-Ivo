@@ -397,22 +397,6 @@ header.sticky .nav-bar {
     align-items: center;
 } 
 
-.section {
-    position: relative;
-    width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 6rem 2rem 2rem;
-}
-
-.sub-section {
-    position: relative;
-    width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 6rem 0;
-}
-
 .section-title-01 {
     font-size: 4.5em;
     font-weight: 800;
@@ -432,138 +416,80 @@ header.sticky .nav-bar {
 .container {
     position: relative;
     flex-direction: column;
-    margin-top: -85px;
 }
 
-/* Experiencia laboral */
-.skills-info {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 0 auto;
+/* Experiencia */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start;
+  margin-top: 1rem;
+  padding: 0 100px;
 }
 
-.skills-info h4 {
-    margin-bottom: 20px;
-}
-
-.skills-info p {
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.skills-info h4 label {
-    background: var(--second-color);
-    color: #fff;
-    font-size: var(--normal-font-size);
-    font-weight: 400;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-/* Educación */
-.hobbies {
-    margin-top: 20px;
-}
-
-.blandas {
-    margin-top: 20px;
+/* Estilo para títulos */
+.container-grid h4 label {
+  background-color: #6163b6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 15px;
 }
 
 .edu-list .item {
-    background: var(--card-bg-color);
-    box-shadow: 3px 3px 15px 2px rgba(185, 181, 181, 0.42);
-    border-bottom: 3px solid var(--second-color);
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 6px;
-    transition: .3s ease;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.05);
+  }
+
+/* Lista de barras de habilidades */
+.bars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  list-style: none;
 }
 
-.edu-list .item .year {
-    font-size: var(--small-font-size);
-    margin-bottom: 5px;
-}
-
-.edu-list .item p {
-    color: var(--third-color);
-    font-size: var(--small-font-size);
-}
-
-.edu-list .item p span {
-    color: var(--first-color);
-    font-size: var(--normal-font-size);
-    font-weight: 500;
-}
-
-/* Habilidades */
 .bar {
-    background: var(--card-bg-color);
-    box-shadow: 3px 3px 15px 2px rgba(185, 181, 181, 0.42);
-    margin-bottom: 10px;
-    padding: 20px;
-    border-radius: 6px;
-    transition: .3s ease;
-    border-bottom: 3px solid var(--second-color);
+    background-color: #ffffff;
+    padding: 9px;
+    margin-bottom: 1px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.05);
 }
 
-.bar .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--small-font-size);
+.bar .info span {
+  font-weight: bold;
 }
 
-.bar .html:before {
-    width: 100%;
+/* Responsividad */
+@media screen and (max-width: 900px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.bar .css:before {
-    width: 100%;
-}
-
-.bar .sass:before {
-    width: 100%;
-}
-
-.bar .javascript:before {
-    width: 100%;
-}
-
-.bar .react:before {
-    width: 100%;
-}
-
-.bar .sql:before {
-    width: 100%;
-}
-
-.bar .aws:before {
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-   .skills {
-    display: block !important;
-        width: 90% !important;
-        max-width: 400px !important;
-        margin: 0 auto !important;
-        padding: 20px !important;
-        text-align: left !important;
-   }
-
-   .flex-center {
-    margin-top: 100px;
-   }
-
-   .flex-center h1 {
-    font-size: 65px;
-   }
+@media screen and (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* = Portfolio = */
-.portfolio .container .content {
+ /* Width Potafolio */
+ .portfolio {
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 2rem 2rem;
+}
+
+.container .content {
     width: 100%;
 }
 
@@ -571,14 +497,14 @@ header.sticky .nav-bar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 100%;
-    gap: 35px;
+    gap: 30px;
     margin: 0 auto;
 }
 
 .portfolio-list .img-card {
     position: relative;
     max-width: 100%;
-    height: 360px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
@@ -772,8 +698,3 @@ footer .scroll-down i {
         transform: translateY(10px);
     }
 }
-
-/* = Media query max-width 1070px = */
- /* @media screen and (max-width: 1070px){
-
-}  */
