@@ -1,10 +1,10 @@
 # PORTAFOLIO WEB 
 
-¡Hola! Soy **Ivonne Rosete** y este es mi portafolio profesional.  
+¡Hola! Soy **Ivonne Rosete Alcantar** y este es mi portafolio profesional.  
 Aquí presento una selección de mis proyectos, tecnologías que domino, y una breve introducción sobre mí como desarrolladora web.
 
 🌐 **Sitio en línea:**  
-👉 [https://portafolio-ivonne.web.app/](https://portafolio-ivonne.web.app/)
+[https://portafolio-ivonne.web.app/](https://portafolio-ivonne.web.app/)
 
 ---
 
@@ -17,9 +17,9 @@ Me apasiona resolver problemas, aprender nuevas tecnologías y construir solucio
 
 ## Tecnologías destacadas
 
-- **Frontend:** HTML5, CSS3, SASS, JavaScript, React, Redux Toolkit  
-- **Backend en formación:** Java (Spring Boot), Node.js  
-- **Otras herramientas:** Firebase, Git, GitHub, Figma, Jira
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Backend en formación:** Java, consumo de APIs REST  
+- **Otras herramientas:** Postman, Json, Gson, Git, GitHub, Figma, Jira
 
 ---
 
@@ -45,4 +45,6 @@ Me apasiona resolver problemas, aprender nuevas tecnologías y construir solucio
 - **Billie Eilish Tour**  
   Desarrollo de un proyecto práctico con el objetivo de evidenciar mis habilidades y experiencia en la implementación y optimización de hojas de estilo utilizando SASS.  
   🔗 [https://billie-eilish-tour.web.app/](https://billie-eilish-tour.web.app/)
+
+- **Entre otros ==>** 
 
